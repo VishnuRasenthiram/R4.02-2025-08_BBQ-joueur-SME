@@ -15,7 +15,8 @@ class JoueurServiceTest {
 
     @BeforeEach
     void setUp() {
-        joueurService = new JoueurService();
+        joueurService = JoueurService.getInstance();
+        joueurService.reset();
     }
 
 

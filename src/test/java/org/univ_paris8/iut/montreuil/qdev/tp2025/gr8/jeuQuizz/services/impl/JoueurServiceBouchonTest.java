@@ -15,6 +15,7 @@ class JoueurServiceBouchonTest {
     @BeforeAll
     public static void init() {
         service = JoueurService.getInstance();
+
     }
 
     @Test

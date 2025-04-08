@@ -74,5 +74,7 @@ public class JoueurService implements JoueurInterface {
     public ArrayList<JoueurDTO> listerJoueur() {
         return new ArrayList<>(joueurs);
     }
-
+    public void reset() {
+        joueurs.clear();
+    }
 }
