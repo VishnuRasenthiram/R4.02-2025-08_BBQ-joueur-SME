@@ -4,6 +4,7 @@ import org.univ_paris8.iut.montreuil.qdev.tp2025.gr8.jeuQuizz.entities.dto.Joueu
 import org.univ_paris8.iut.montreuil.qdev.tp2025.gr8.jeuQuizz.services.interfaces.JoueurInterface;
 import org.univ_paris8.iut.montreuil.qdev.tp2025.gr8.jeuQuizz.utils.exceptions.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class LangueInvalideBouchon implements JoueurInterface {
@@ -13,4 +14,15 @@ public class LangueInvalideBouchon implements JoueurInterface {
 
         throw new LangueInvalideException();
     }
+
+    @Override
+    public Boolean supprimerJoueur(String prenom) throws SupprimerJoueurException {
+        return null;
+    }
+
+    @Override
+    public ArrayList<JoueurDTO> listerJoueur() {
+        return null;
+    }
+
 }
